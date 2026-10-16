@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - MCQ Practice Test</title>
+  <meta name="description" content="Learn about MCQ Practice Test, a free, browser-based, randomized quiz practice tool with instant scoring, error review, and custom JSON question bank support.">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-14VQH0M6HV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-14VQH0M6HV');
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-content">
+        <div class="brand">
+          <div class="logo-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <div>
+            <h1 class="app-title"><a href="index.html" class="brand-link">MCQ Practice Test</a></h1>
+            <p class="app-subtitle">Interactive randomized knowledge assessment</p>
+          </div>
+        </div>
+
+        <div class="header-back-action">
+          <a href="index.html" class="btn btn-outline btn-sm" title="Return to quiz practice">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span>Back to Quiz</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <article class="content-card">
+        <header class="content-header">
+          <h1 class="content-title">About MCQ Practice Test</h1>
+          <p class="content-subtitle">A fast, flexible, and distraction-free tool for self-directed study and knowledge assessment.</p>
+        </header>
+
+        <div class="content-body">
+          <h2>What is MCQ Practice Test?</h2>
+          <p>
+            <strong>MCQ Practice Test</strong> is a free, lightweight web application designed for students, educators, and lifelong learners who want a straightforward way to practise multiple-choice questions. It runs completely inside your web browser without requiring accounts, logins, installations, or subscriptions.
+          </p>
+
+          <h2>Key Features</h2>
+          <ul>
+            <li>
+              <strong>Diverse Question Types:</strong> Practice both <em>Single-Choice</em> questions (pick the 1 correct answer) and <em>Multiple-Choice</em> questions (select all that apply) with clear visual badges.
+            </li>
+            <li>
+              <strong>Custom JSON Question Upload:</strong> Easily test yourself on any subject by uploading your own questions in a simple, standardized JSON format. Just drag and drop your <code>.json</code> file on the home screen.
+            </li>
+            <li>
+              <strong>Built-in Starter Question Bank:</strong> Get started immediately with 10 pre-loaded questions spanning general science, computer science, programming, and web development.
+            </li>
+            <li>
+              <strong>Randomized Question &amp; Option Shuffling:</strong> Every attempt automatically shuffles both the question sequence and the option choices using the Fisher-Yates algorithm, preventing memorization by position.
+            </li>
+            <li>
+              <strong>Interactive Question Navigator:</strong> Seamlessly jump between questions, view your answering progress in real time, and receive a reminder before submitting if any questions remain unanswered.
+            </li>
+            <li>
+              <strong>Instant Strict Scoring:</strong> Get immediate grading upon submission based on strict evaluation rules (full match required on multiple-select questions; unanswered or incorrect choices receive 0 points).
+            </li>
+            <li>
+              <strong>Configurable Passing Threshold:</strong> Set your target passing benchmark (e.g., 60%, 75%, 90%) right from the setup screen.
+            </li>
+            <li>
+              <strong>Comprehensive Result Review:</strong> Inspect every question after submission with filter tabs (<em>All</em>, <em>Incorrect Only</em>, <em>Correct Only</em>) to see what you selected versus the correct answers.
+            </li>
+            <li>
+              <strong>Targeted Retry:</strong> Focus directly on learning by clicking <strong>Retry Missed Questions</strong> to repeat only the items you answered incorrectly or skipped, or restart the entire quiz reshuffled.
+            </li>
+          </ul>
+
+          <h2>Completely Free &amp; Client-Side</h2>
+          <p>
+            MCQ Practice Test is 100% free with no hidden fees, paywalls, or third-party ads. The entire application runs directly on your device inside your web browser using HTML5, CSS3, and modern vanilla JavaScript with zero external frameworks or heavy dependencies.
+          </p>
+          <p>
+            All question parsing and answer evaluations happen locally in your browser's memory, ensuring instant responsiveness and protecting your question data from being stored on remote servers.
+          </p>
+
+          <h2>Supported JSON Format</h2>
+          <p>
+            To create your own question bank, prepare a <code>.json</code> file structured as an array of question objects:
+          </p>
+          <pre style="background: var(--surface-alt); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1rem; overflow-x: auto; font-size: 0.875rem; margin-bottom: 1rem;"><code>[
+  {
+    "id": 1,
+    "question": "What is the capital of France?",
+    "type": "single",
+    "options": [
+      { "id": "A", "text": "Rome" },
+      { "id": "B", "text": "Paris" },
+      { "id": "C", "text": "Berlin" },
+      { "id": "D", "text": "Madrid" }
+    ],
+    "answer": ["B"]
+  },
+  {
+    "id": 2,
+    "question": "Which of the following are programming languages?",
+    "type": "multiple",
+    "options": [
+      { "id": "A", "text": "Python" },
+      { "id": "B", "text": "HTML" },
+      { "id": "C", "text": "Java" },
+      { "id": "D", "text": "CSS" }
+    ],
+    "answer": ["A", "C"]
+  }
+]</code></pre>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
+            <strong>Note:</strong> Your results are evaluated using the answer key provided in your question bank. Please ensure the correct answer option IDs are specified in the <code>answer</code> field for each question.
+          </p>
+          <p>
+            You can load this format directly from the <a href="index.html">homepage setup screen</a>.
+          </p>
+
+          <h2 id="contact">Contact &amp; Feedback</h2>
+          <p>
+            Have suggestions for improvement, discovered a bug, or want to say hello? We welcome your feedback!
+          </p>
+          <div class="contact-box">
+            <p><strong>Get in Touch:</strong></p>
+            <a href="mailto:saitechnoligies@gmail.com" class="contact-email-link">saitechnoligies@gmail.com</a>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-content">
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="index.html" class="footer-link">Home</a>
+          <span class="footer-sep" aria-hidden="true">&bull;</span>
+          <a href="about.html" class="footer-link">About</a>
+          <span class="footer-sep" aria-hidden="true">&bull;</span>
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          <span class="footer-sep" aria-hidden="true">&bull;</span>
+          <a href="about.html#contact" class="footer-link">Contact</a>
+        </nav>
+        <p class="footer-text">
+          &copy; 2026 MCQ Practice Test &mdash; Client-side knowledge assessment for practice and learning.
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

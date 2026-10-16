@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - MCQ Practice Test</title>
+  <meta name="description" content="Privacy Policy for MCQ Practice Test detailing local client-side data handling, Google Analytics usage, and hosting on GitHub Pages.">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-14VQH0M6HV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-14VQH0M6HV');
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-content">
+        <div class="brand">
+          <div class="logo-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <div>
+            <h1 class="app-title"><a href="index.html" class="brand-link">MCQ Practice Test</a></h1>
+            <p class="app-subtitle">Interactive randomized knowledge assessment</p>
+          </div>
+        </div>
+
+        <div class="header-back-action">
+          <a href="index.html" class="btn btn-outline btn-sm" title="Return to quiz practice">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span>Back to Quiz</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <article class="content-card">
+        <header class="content-header">
+          <h1 class="content-title">Privacy Policy</h1>
+          <p class="content-subtitle">How information is handled when you use the MCQ Practice Test application.</p>
+          <div class="content-meta">
+            <span>Last Updated: <strong>October 17, 2026</strong></span>
+          </div>
+        </header>
+
+        <div class="content-body">
+          <div class="content-callout">
+            <strong>Summary:</strong> MCQ Practice Test runs entirely inside your web browser. Uploaded question files and quiz answers are processed in local memory and are never transmitted to any custom server or database. We use Google Analytics to gather pseudonymous usage metrics and aggregate site interaction statistics.
+          </div>
+
+          <h2>1. Purpose of This Website</h2>
+          <p>
+            MCQ Practice Test is a free, lightweight, client-side educational practice tool designed to help learners and students test their knowledge using randomized single-choice and multiple-choice questions. It provides instant automated scoring, error review, and retry capabilities without requiring user registration, accounts, or fees.
+          </p>
+
+          <h2>2. How Your Quiz Data &amp; Question Files Are Processed</h2>
+          <p>
+            We designed this application to prioritize privacy and simplicity through a client-side architecture:
+          </p>
+          <ul>
+            <li>
+              <strong>Uploaded JSON Question Banks:</strong> When you upload a custom question file via the file selector or drag-and-drop, the file is read directly in your browser using the standard Web <code>FileReader</code> API and parsed using client-side JavaScript. <strong>Your file is never uploaded, stored, or sent to any server or external database.</strong>
+            </li>
+            <li>
+              <strong>Quiz Answers and Selections:</strong> When you select options, navigate between questions, and submit your quiz, your choices are stored temporarily in your browser's active JavaScript memory (RAM).
+            </li>
+            <li>
+              <strong>Scoring &amp; Evaluation:</strong> Grading, score calculation, pass/fail status determination, and result breakdowns are performed entirely within your browser code.
+            </li>
+            <li>
+              <strong>No Backend Database:</strong> This website does not possess or communicate with any custom backend server, application programming interface (API), or persistent database. Once you close or refresh the browser tab, your active attempt data is cleared from memory.
+            </li>
+          </ul>
+
+          <div class="quiz-disclaimer" style="margin-top: 1rem; margin-bottom: 1.5rem;">
+            <div class="disclaimer-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <p class="disclaimer-text">
+              <strong>Security &amp; Confidentiality Notice:</strong> Because this is a client-side browser application, loaded question content and answer keys reside in your browser's local execution context. Anyone with access to browser developer tools (F12) can inspect the code and answer keys. Do not upload confidential, sensitive, proprietary, or personal information.
+            </p>
+          </div>
+
+          <h2>3. Google Analytics 4 (GA4)</h2>
+          <p>
+            This website integrates Google Analytics 4 (Measurement ID: <code>G-14VQH0M6HV</code>), a web analytics service provided by Google LLC (&ldquo;Google&rdquo;), to understand visitor trends and improve website usability.
+          </p>
+          <p>
+            <strong>What Google Analytics May Collect:</strong>
+          </p>
+          <ul>
+            <li><strong>Technical and Device Information:</strong> Browser type and version, operating system, device model, screen resolution, language preference, and approximate geographic region (derived by Google from incoming IP addresses prior to discarding the IP).</li>
+            <li><strong>Usage Information:</strong> Visited URLs, page interactions, referring sites, and timestamps of activity.</li>
+            <li><strong>Custom Quiz Events (Verified Implementation):</strong> Based on the application's actual JavaScript implementation (`script.js`), Google Analytics is notified of test lifecycle events using strictly defined numerical and boolean parameters:
+              <ul>
+                <li><code>quiz_start</code>: Dispatched when a valid quiz attempt begins. Transmits:
+                  <ul>
+                    <li><code>question_count</code>: Total count of questions in the attempt (integer).</li>
+                    <li><code>is_retry</code>: Boolean flag (<code>true</code> if retrying missed questions, <code>false</code> for initial or full test attempts).</li>
+                  </ul>
+                </li>
+                <li><code>quiz_complete</code>: Dispatched once when the user submits and finalizes an attempt. Transmits:
+                  <ul>
+                    <li><code>total_questions</code>: Total questions evaluated (integer).</li>
+                    <li><code>correct_answers</code>: Count of correct answers (integer).</li>
+                    <li><code>incorrect_answers</code>: Count of incorrect answers (integer).</li>
+                    <li><code>unanswered_questions</code>: Count of unanswered questions (integer).</li>
+                    <li><code>score_percent</code>: Final calculated score percentage (number).</li>
+                    <li><code>is_passed</code>: Boolean status indicating whether the score met the chosen passing threshold (<code>true</code> or <code>false</code>).</li>
+                  </ul>
+                </li>
+              </ul>
+              <em>Scope of Quiz Data:</em> <strong>The actual text of questions, option choices, user-selected answers, and custom uploaded JSON question banks are processed solely in local browser memory and are never transmitted to Google Analytics or any server.</strong>
+            </li>
+            <li><strong>Pseudonymous Identifiers &amp; Cookies:</strong> Google Analytics sets first-party cookies (such as <code>_ga</code> and <code>_ga_14VQH0M6HV</code>) containing pseudonymous client identifiers to distinguish user sessions across visits. Because online identifiers and device metadata are processed by Google, analytics data is pseudonymous rather than fully de-identified or untraceable.</li>
+          </ul>
+          <p>
+            For more details on how Google processes analytics data, please consult:
+          </p>
+          <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+            <li><a href="https://support.google.com/analytics/answer/6004245" target="_blank" rel="noopener noreferrer">Google Analytics Data Privacy and Security</a></li>
+            <li><a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a> (to prevent your data from being used by Google Analytics)</li>
+          </ul>
+
+          <h2>4. Website Hosting on GitHub Pages</h2>
+          <p>
+            This website is hosted as a static site on <strong>GitHub Pages</strong>, provided by GitHub, Inc. (a subsidiary of Microsoft Corporation). When you request pages from this site, GitHub's servers and Content Delivery Networks (CDNs) automatically process standard web request data. This may include your IP address, browser user-agent header, and request timestamps for operational stability, security monitoring, and DDoS defense.
+          </p>
+          <p>
+            For more information on GitHub's privacy practices, see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.
+          </p>
+
+          <h2>5. Cookies &amp; Local Storage</h2>
+          <p>
+            This website does not use cookies for authentication, profiling, or behavioral advertising. The only cookies utilized are those set by Google Analytics for website traffic measurement as described above. You can manage or disable cookies at any time via your browser settings.
+          </p>
+
+          <h2>6. Third-Party Services &amp; External Links</h2>
+          <p>
+            The website contains no advertising networks, no social media tracking pixels, and no third-party JavaScript frameworks or paid tracking services. Any links to external websites (such as documentation or privacy policies) are governed by the privacy practices of those respective third parties.
+          </p>
+
+          <h2>7. Updates to This Policy</h2>
+          <p>
+            We may revise this Privacy Policy periodically to reflect enhancements to the application or changes in legal requirements. Any modifications will be posted directly to this page with an updated &ldquo;Last Updated&rdquo; date. We encourage visitors to review this page periodically.
+          </p>
+
+          <h2 id="contact">8. Contact Information</h2>
+          <p>
+            If you have questions, feedback, or concerns regarding this Privacy Policy or the MCQ Practice Test website, please reach out via email:
+          </p>
+          <div class="contact-box">
+            <p><strong>Website Maintainer Contact:</strong></p>
+            <a href="mailto:saitechnoligies@gmail.com" class="contact-email-link">saitechnoligies@gmail.com</a>
+          </div>
+
+          <h2>9. Informational Disclaimer</h2>
+          <p class="content-meta" style="line-height: 1.6;">
+            <em>Disclaimer:</em> This privacy policy is provided for transparency and informational purposes only and does not constitute formal legal advice. It does not warrant or guarantee compliance with every international or local data protection regulation (such as GDPR, CCPA, or others). Website owners should evaluate their own compliance obligations based on their jurisdiction and target audience.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-content">
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="index.html" class="footer-link">Home</a>
+          <span class="footer-sep" aria-hidden="true">&bull;</span>
+          <a href="about.html" class="footer-link">About</a>
+          <span class="footer-sep" aria-hidden="true">&bull;</span>
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          <span class="footer-sep" aria-hidden="true">&bull;</span>
+          <a href="about.html#contact" class="footer-link">Contact</a>
+        </nav>
+        <p class="footer-text">
+          &copy; 2026 MCQ Practice Test &mdash; Client-side knowledge assessment for practice and learning.
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

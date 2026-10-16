@@ -1318,4 +1318,282 @@ body {
     width: 100%;
     flex-direction: column;
   }
+
+  .content-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .header-back-action {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .header-back-action .btn {
+    width: auto;
+    padding: 0.45rem 0.75rem;
+    font-size: 0.8125rem;
+  }
 }
+
+/* ==========================================================================
+   Header Navigation, App Footer & Content Pages
+   ========================================================================== */
+
+/* Brand Link */
+.brand-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand-link:hover {
+  text-decoration: none;
+}
+
+/* Header Navigation */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.header-nav-link:hover {
+  color: var(--primary);
+  background-color: var(--primary-light);
+}
+
+.header-nav-link.active {
+  color: var(--primary);
+  font-weight: 600;
+  background-color: var(--primary-light);
+}
+
+/* App Footer */
+.app-footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.footer-sep {
+  color: var(--border-focus);
+  font-size: 0.75rem;
+  user-select: none;
+}
+
+.footer-text {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Quiz Disclaimer Box */
+.quiz-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background-color: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.875rem 1rem;
+  margin-top: 1.5rem;
+}
+
+.disclaimer-icon {
+  color: var(--warning);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 0.15rem;
+}
+
+.disclaimer-text {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.disclaimer-text strong {
+  color: var(--text-main);
+}
+
+/* Content & Policy Pages (About & Privacy) */
+.content-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 2.25rem 2rem;
+}
+
+.content-header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1.25rem;
+}
+
+.content-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.25;
+  margin-bottom: 0.4rem;
+}
+
+.content-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.content-meta {
+  font-size: 0.825rem;
+  color: var(--text-light);
+}
+
+.content-body h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.content-body h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-body p {
+  color: var(--text-main);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.content-body ul, .content-body ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.content-body li {
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.content-body a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.content-body a:hover {
+  color: var(--primary-hover);
+}
+
+.content-callout {
+  background-color: var(--surface-alt);
+  border-left: 4px solid var(--primary);
+  padding: 1rem 1.25rem;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin: 1.25rem 0;
+  font-size: 0.925rem;
+  color: var(--text-main);
+  line-height: 1.55;
+}
+
+.contact-box {
+  background-color: var(--primary-light);
+  border: 1px solid #bfdbfe;
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-email-placeholder {
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px dashed var(--primary);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-family: monospace;
+  font-size: 0.95rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin: 0.5rem 0;
+  word-break: break-all;
+}
+
+.contact-email-link {
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid #bfdbfe;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0.35rem 0;
+  transition: all var(--transition-fast);
+  word-break: break-all;
+}
+
+.contact-email-link:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary);
+  text-decoration: underline;
+}
+
+.badge-info {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--primary-light);
+  color: var(--primary);
+  border: 1px solid #bfdbfe;
+}
+
