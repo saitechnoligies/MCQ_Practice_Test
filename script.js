@@ -138,8 +138,27 @@ const state = {
   userAnswers: {},         // questionId -> Array of selected option IDs (e.g. ['B'] or ['A', 'C'])
   passThreshold: 60,       // Configurable passing percentage
   reviewFilter: 'all',     // 'all' | 'incorrect' | 'correct'
-  isReviewMode: false
+  isReviewMode: false,
+  isQuizActive: false,     // Whether an active quiz attempt is in progress
+  attemptCompleted: false  // Prevents duplicate quiz_complete events for the same attempt
 };
+
+// ==========================================================================
+// Google Analytics 4 (GA4) Tracking Helper
+// ==========================================================================
+
+/**
+ * Safely sends a custom Google Analytics 4 event if gtag is available.
+ * Checks whether window and window.gtag exist before invoking.
+ *
+ * @param {string} eventName - Name of the event (e.g. 'quiz_start', 'quiz_complete')
+ * @param {Object} [eventParams={}] - Custom parameters for the event
+ */
+function sendAnalyticsEvent(eventName, eventParams = {}) {
+  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+    window.gtag('event', eventName, eventParams);
+  }
+}
 
 // --- DOM Element References ---
 const screens = {
@@ -423,11 +442,19 @@ function initTestWithQuestions(questions, isRetry = false) {
   state.currentIndex = 0;
   state.userAnswers = {};
   state.isReviewMode = false;
+  state.isQuizActive = true;
+  state.attemptCompleted = false;
 
   // Render question UI
   renderNavigator();
   renderCurrentQuestion();
   switchScreen('quiz');
+
+  // Track quiz start event in Google Analytics
+  sendAnalyticsEvent('quiz_start', {
+    question_count: state.activeQuestions.length,
+    is_retry: isRetry
+  });
 }
 
 // ==========================================================================
@@ -680,6 +707,7 @@ function closeUnansweredModal() {
 }
 
 function finalizeSubmit() {
+  if (state.attemptCompleted) return;
   closeUnansweredModal();
   calculateAndRenderResults();
 }
@@ -788,6 +816,20 @@ function calculateAndRenderResults() {
     : "No Incorrect Questions";
 
   switchScreen('results');
+
+  // Track quiz completion event in Google Analytics (guarded against duplicate triggers)
+  if (state.isQuizActive && !state.attemptCompleted) {
+    state.attemptCompleted = true;
+    state.isQuizActive = false;
+    sendAnalyticsEvent('quiz_complete', {
+      total_questions: lastEvaluation.total,
+      correct_answers: lastEvaluation.correctCount,
+      incorrect_answers: lastEvaluation.incorrectCount,
+      unanswered_questions: lastEvaluation.unansweredCount,
+      score_percent: lastEvaluation.percentage,
+      is_passed: lastEvaluation.isPassed
+    });
+  }
 }
 
 // ==========================================================================
