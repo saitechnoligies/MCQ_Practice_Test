@@ -1,0 +1,125 @@
+[
+  {
+    "id": 1,
+    "question": "What is the capital of France?",
+    "type": "single",
+    "options": [
+      { "id": "A", "text": "Rome" },
+      { "id": "B", "text": "Paris" },
+      { "id": "C", "text": "Berlin" },
+      { "id": "D", "text": "Madrid" }
+    ],
+    "answer": ["B"]
+  },
+  {
+    "id": 2,
+    "question": "Which of the following are programming languages?",
+    "type": "multiple",
+    "options": [
+      { "id": "A", "text": "Python" },
+      { "id": "B", "text": "HTML" },
+      { "id": "C", "text": "Java" },
+      { "id": "D", "text": "CSS" },
+      { "id": "E", "text": "Rust" }
+    ],
+    "answer": ["A", "C", "E"]
+  },
+  {
+    "id": 3,
+    "question": "Which planet is known as the Red Planet?",
+    "type": "single",
+    "options": [
+      { "id": "A", "text": "Venus" },
+      { "id": "B", "text": "Mars" },
+      { "id": "C", "text": "Jupiter" },
+      { "id": "D", "text": "Saturn" }
+    ],
+    "answer": ["B"]
+  },
+  {
+    "id": 4,
+    "question": "Which of the following data structures operate on a First-In-First-Out (FIFO) basis?",
+    "type": "single",
+    "options": [
+      { "id": "A", "text": "Stack" },
+      { "id": "B", "text": "Queue" },
+      { "id": "C", "text": "Binary Search Tree" },
+      { "id": "D", "text": "Hash Map" }
+    ],
+    "answer": ["B"]
+  },
+  {
+    "id": 5,
+    "question": "Which of the following are valid HTTP request methods?",
+    "type": "multiple",
+    "options": [
+      { "id": "A", "text": "GET" },
+      { "id": "B", "text": "POST" },
+      { "id": "C", "text": "FETCH" },
+      { "id": "D", "text": "DELETE" },
+      { "id": "E", "text": "PUT" }
+    ],
+    "answer": ["A", "B", "D", "E"]
+  },
+  {
+    "id": 6,
+    "question": "What is the time complexity of searching for an element in a balanced Binary Search Tree (BST)?",
+    "type": "single",
+    "options": [
+      { "id": "A", "text": "O(1)" },
+      { "id": "B", "text": "O(n)" },
+      { "id": "C", "text": "O(log n)" },
+      { "id": "D", "text": "O(n log n)" }
+    ],
+    "answer": ["C"]
+  },
+  {
+    "id": 7,
+    "question": "Which of the following are primitive data types in JavaScript?",
+    "type": "multiple",
+    "options": [
+      { "id": "A", "text": "string" },
+      { "id": "B", "text": "boolean" },
+      { "id": "C", "text": "object" },
+      { "id": "D", "text": "symbol" },
+      { "id": "E", "text": "array" }
+    ],
+    "answer": ["A", "B", "D"]
+  },
+  {
+    "id": 8,
+    "question": "Who is considered the father of computer science?",
+    "type": "single",
+    "options": [
+      { "id": "A", "text": "Alan Turing" },
+      { "id": "B", "text": "Charles Babbage" },
+      { "id": "C", "text": "Ada Lovelace" },
+      { "id": "D", "text": "John von Neumann" }
+    ],
+    "answer": ["A"]
+  },
+  {
+    "id": 9,
+    "question": "Which of the following CSS properties can trigger hardware-accelerated animations?",
+    "type": "multiple",
+    "options": [
+      { "id": "A", "text": "transform" },
+      { "id": "B", "text": "opacity" },
+      { "id": "C", "text": "width" },
+      { "id": "D", "text": "margin-left" }
+    ],
+    "answer": ["A", "B"]
+  },
+  {
+    "id": 10,
+    "question": "In Git, which command creates a new branch and switches to it in a single step?",
+    "type": "single",
+    "options": [
+      { "id": "A", "text": "git branch -m <name>" },
+      { "id": "B", "text": "git checkout -b <name>" },
+      { "id": "C", "text": "git switch -d <name>" },
+      { "id": "D", "text": "git merge -b <name>" }
+    ],
+    "answer": ["B"]
+  }
+]
